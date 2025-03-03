@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="home-section">
+        <div class="home-content">
+            <h1>Hi, I'm [Tirth Gandhi]</h1>
+            <p>A passionate web developer with a knack for creating beautiful and functional websites.</p>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <p>Hello! I'm [Tirth Gandhi], a web developer in building responsive and user-friendly websites. I specialize in HTML, CSS, JavaScript, and modern frameworks like React.</p>
+            <p>I am pursuing a degree in Computer Science from [Gls University] . I'm always eager to learn new technologies and improve my skills.</p>
+        </div>
+    </section>
+
+    <section id="projects" class="projects-section">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <h3>Project 1</h3>
+                <p>Description of Project 1. This project involved creating a responsive website for a local business.</p>
+                <a href="#" class="project-link">View Project</a>
+            </div>
+            <div class="project-card">
+                <h3>Project 2</h3>
+                <p>Description of Project 2. This project was a personal blog built using React.</p>
+                <a href="#" class="project-link">View Project</a>
+            </div>
+            <div class="project-card">
+                <h3>Project 3</h3>
+                <p>Description of Project 3. This project involved developing an e-commerce platform.</p>
+                <a href="#" class="project-link">View Project</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+       </section>
+</body>
+</html>
