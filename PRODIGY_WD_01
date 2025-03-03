@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<head>
+    <title>Interactive Navigation Menu</title>
+    <style>
+        body
+        {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            height: 2000px;
+            background-color: beige;
+        }
+        .navbar
+        {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: brown;
+            padding: 15px 0;
+            text-align: center;
+            transition: background 0.3s ease;
+        }
+        .navbar.scrolled
+        {
+            background:rgb(166, 77, 77)
+        }
+    .navbar ul
+    {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .navbar ul li
+    {
+        margin: 0 20px;
+    }
+
+    .navbar ul li a
+    {
+        text-decoration:none;
+        color: white;
+        font-size: 20px;
+        transition: color 0.3s;
+    }
+    .navbar ul li a:hover
+    {
+        color: black;
+    }
+
+    </style>
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <script>
+        window.addEventListener("scroll",function()
+    {
+        let navbar = document.getElementById("navbar");
+        if(window.scrollY > 50)
+    {
+        navbar.classList.add("scrolled");
+    }
+    else{
+        navbar.classList.remove("scrolled");
+    }
+    });
+    </script>
+</body>
+</html>
